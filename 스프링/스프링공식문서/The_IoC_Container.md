@@ -123,7 +123,7 @@ XML은 메타데이터를 정의하는 전통적인 방식이지만
 어플리케이션은 ApplicationContext가 생성되고 초기화되었을때 설정 메타데이터와 병합하게 된다.
 
 그러면 완전히 구성되고 실행가능한 시스템(어플리케이션)이 된다.
-![img.png](img.png)
+![](이미지/img.png)
 
 ### 1.2.1. Configuration Metadata
 
