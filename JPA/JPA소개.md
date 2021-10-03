@@ -36,11 +36,11 @@ Object-relational mapping(객체 관계 매핑)
 
 
 ### JPA는 애플리케이션과 JDBC 사이에서 동작
-![img.png](img.png)
+![img.png](img/img.png)
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 
 ### 📌 가장중요! 패러다임의 불일치를 해결
@@ -59,9 +59,9 @@ Object-relational mapping(객체 관계 매핑)
   삭제 : jpa.remove(member)
 
 - 유지보수
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 - 패러다임의 불일치 해결
 - 성능
@@ -73,7 +73,7 @@ Object-relational mapping(객체 관계 매핑)
         1. 트랜잭션을 커밋할 때까지 INSERT SQL을 모음
         2. JDBC BATCH SQL 기능을 사용해서 한번에 SQL 사용
     - 지연 로딩(Lazy Loading)
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 
 - 데이터 접근 추상화와 벤더 독립성
 - 표준
