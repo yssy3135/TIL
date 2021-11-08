@@ -630,3 +630,42 @@ UI객체를 TestResult와 연결할 수 있다면 테스트가 실행된 시점,
 그러므로 가능한 인터페이스를 작게 만들길 원할 것이다.
 
 인터페이스에 대한 구현은 또한 적절한 값을 되돌리거나 부적절한 오퍼레이션이 호출된 경우 예외를 던지게끔 만들어야 한것이다.
+
+## 로그 문자열
+
+메시지의 호출 순서가 올바른지를 검사하려면 어떻게 해야 할까?
+
+로그 문자열을 가지고 있다가 메시지가 호출될 때마다 그 문자열에 추가하도록 한다.
+
+xUnit에서 쓴 예제를 사용할 수 있다. setUp(),테스트를 수행하는 메서드, tearDown()순서로 호출되길 원하는 템플릿 메서드(Template Method)가 있다.
+
+각 메서드들이 로그 문자열에 자기 이름을 추가하게 구현하면 쉽게 읽히는 테스트를 만들 수 있다.
+
+```python
+def testTemplateMethod(self):
+	test = WasRun("testMethod")
+	result= TestResult()
+	test.run(result)
+	assert("setUp testMethod tearDown " == test.log)
+```
+
+구현 또한 간단하다.
+
+**WasRun**
+
+```python
+def setUp(self):
+	self.log = "setUp"
+def testMethod(self):
+	self.log=self.log + "testMethod "
+def tearDown(self):
+	self.log =self.log + "tearDown "
+```
+
+로그 문자열은 특히 옵저버(Observer)를 구현하고, 이벤트 통보가 원하는 순서대로 발생하는지를 확인하고자 할 때 유용하다.
+
+만약 어떤 이벤트 통보들이 일어나는지를 검사하기는 하지만 그 순서는 상관이 없을 경우엔 문자열 집합을 저장하고 있다가 단언(assertion)에서 집합 비교를 수행하면 된다.
+
+로그 문자열은 셀프 션트와도 잘 작동한다.
+
+해당 테스트케이스는 로그를 추가하고 적절한 값을 반환하는 식으로 셀프 션트한 인터페이스의 메서드를 구현한다.
