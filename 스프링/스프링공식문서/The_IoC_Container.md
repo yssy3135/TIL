@@ -1,4 +1,4 @@
-## 1. The IoC Container
+# 1. The IoC Container
 
 ### 1.1 Spring Ioc Container와 Beans 소개
 

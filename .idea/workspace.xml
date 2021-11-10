@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="TDD 빨간 막대 패턴(깨진 테스트)">
+      <change beforePath="$PROJECT_DIR$/스프링/스프링공식문서/The_IoC_Container.md" beforeDir="false" afterPath="$PROJECT_DIR$/스프링/스프링공식문서/The_IoC_Container.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="29c8a3270160d7da67cca205340b6baf193b7f33" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1y25vt2ObHmLBKmE9bpouhas3HF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Markdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JPA/img" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ys313\TIL\JPA\img" />
+      <recent name="C:\Users\ys313\TIL\스프링\스프링공식문서" />
+      <recent name="C:\Users\ys313\TIL\스프링공식문서" />
+      <recent name="C:\Users\ys313\TIL\스프링\이미지" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="" />
+      <created>1631437080044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631437080044</updated>
+      <workItem from="1631437081958" duration="635000" />
+      <workItem from="1631437734809" duration="940000" />
+      <workItem from="1631497206492" duration="605000" />
+      <workItem from="1631522621679" duration="1432000" />
+      <workItem from="1631545126907" duration="1255000" />
+      <workItem from="1631717537293" duration="155000" />
+      <workItem from="1632666174588" duration="2776000" />
+      <workItem from="1633266677915" duration="489000" />
+      <workItem from="1633939721011" duration="1380000" />
+      <workItem from="1634049288750" duration="1186000" />
+      <workItem from="1634135920104" duration="96000" />
+      <workItem from="1634601308330" duration="1200000" />
+      <workItem from="1634656286825" duration="1592000" />
+      <workItem from="1634864905071" duration="1112000" />
+      <workItem from="1635089985130" duration="178000" />
+      <workItem from="1635257394437" duration="2082000" />
+      <workItem from="1635431623392" duration="4712000" />
+      <workItem from="1635868883797" duration="1971000" />
+      <workItem from="1636203796627" duration="4035000" />
+      <workItem from="1636641964789" duration="645000" />
+      <workItem from="1636646775272" duration="26000" />
+    </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <created>1631437903544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631437903544</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add README">
+      <created>1631437971404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631437971404</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1. The IoC Container">
+      <created>1631544457140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631544457140</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.2. Container Overview">
+      <created>1631717656929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631717656929</updated>
+    </task>
+    <task id="LOCAL-00005" summary="자바 findAny() vs findFirst()">
+      <created>1632666587118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632666587118</updated>
+    </task>
+    <task id="LOCAL-00006" summary="설정 메타데이터">
+      <created>1632670961621</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632670961621</updated>
+    </task>
+    <task id="LOCAL-00007" summary="설정 메타데이터">
+      <created>1632671282999</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632671282999</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JPA소개">
+      <created>1633267009399</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633267009399</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JPA 영속성 컨텍스트">
+      <created>1633940087388</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633940087389</updated>
+    </task>
+    <task id="LOCAL-00010" summary="JPA 기초와 매핑">
+      <created>1634049856472</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634049856472</updated>
+    </task>
+    <task id="LOCAL-00011" summary="객체와 테이블 매핑">
+      <created>1634136007876</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634136007876</updated>
+    </task>
+    <task id="LOCAL-00012" summary="필드와 컬럼 매핑">
+      <created>1634656413588</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634656413588</updated>
+    </task>
+    <task id="LOCAL-00013" summary="TDD">
+      <created>1634656682418</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634656682418</updated>
+    </task>
+    <task id="LOCAL-00014" summary="TDD 2장 정리">
+      <created>1634865105563</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634865105563</updated>
+    </task>
+    <task id="LOCAL-00015" summary="TDD 6장까지 정리">
+      <created>1635090111486</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635090111486</updated>
+    </task>
+    <task id="LOCAL-00016" summary="TDD 6장까지 정리">
+      <created>1635257584807</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635257584807</updated>
+    </task>
+    <task id="LOCAL-00017" summary="연관관계 매핑">
+      <created>1635258103252</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635258103252</updated>
+    </task>
+    <task id="LOCAL-00018" summary="양방향 매핑">
+      <created>1635324366537</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635324366537</updated>
+    </task>
+    <task id="LOCAL-00019" summary="TDD 정리">
+      <created>1635431716385</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1635431716385</updated>
+    </task>
+    <task id="LOCAL-00020" summary="TDD 작성한 테스트에 대한 지표">
+      <created>1635518385627</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1635518385627</updated>
+    </task>
+    <task id="LOCAL-00021" summary="TDD 빨간 막대 패턴(1)">
+      <created>1635575195354</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1635575195354</updated>
+    </task>
+    <task id="LOCAL-00022" summary="TDD 빨간 막대 패턴(학습 테스트)">
+      <created>1635690789488</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1635690789488</updated>
+    </task>
+    <task id="LOCAL-00023" summary="TDD 빨간 막대 패턴(또 다른 테스트)">
+      <created>1635776940511</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1635776940511</updated>
+    </task>
+    <task id="LOCAL-00024" summary="TDD 빨간 막대 패턴(휴식)">
+      <created>1635868928851</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1635868928851</updated>
+    </task>
+    <task id="LOCAL-00025" summary="TDD 빨간 막대 패턴(다시하기)">
+      <created>1635868969473</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1635868969473</updated>
+    </task>
+    <task id="LOCAL-00026" summary="TDD 빨간 막대 패턴(싸구려 책상, 좋은 의자)">
+      <created>1636034890647</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1636034890647</updated>
+    </task>
+    <task id="LOCAL-00027" summary="TDD 빨간 막대 패턴(모의객체)">
+      <created>1636203837190</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1636203837190</updated>
+    </task>
+    <task id="LOCAL-00028" summary="TDD 빨간 막대 패턴(셀프션트)">
+      <created>1636296228505</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1636296228505</updated>
+    </task>
+    <task id="LOCAL-00029" summary="TDD 빨간 막대 패턴(로그 문자열)">
+      <created>1636375626622</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1636375626622</updated>
+    </task>
+    <task id="LOCAL-00030" summary="TDD 빨간 막대 패턴(크래시 테스트 더미)">
+      <created>1636469943130</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1636469943130</updated>
+    </task>
+    <task id="LOCAL-00031" summary="TDD 빨간 막대 패턴(깨진 테스트)">
+      <created>1636642008233</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1636642008233</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="자바 findAny() vs findFirst()" />
+    <MESSAGE value="설정 메타데이터" />
+    <MESSAGE value="JPA소개" />
+    <MESSAGE value="JPA 영속성 컨텍스트" />
+    <MESSAGE value="JPA 기초와 매핑" />
+    <MESSAGE value="객체와 테이블 매핑" />
+    <MESSAGE value="필드와 컬럼 매핑" />
+    <MESSAGE value="TDD" />
+    <MESSAGE value="TDD 2장 정리" />
+    <MESSAGE value="연관관계매핑" />
+    <MESSAGE value="연관관계 매핑" />
+    <MESSAGE value="양방향 매핑" />
+    <MESSAGE value="TDD 정리" />
+    <MESSAGE value="TDD 작성한 테스트에 대한 지표" />
+    <MESSAGE value="TDD 빨간 막대 패턴(1)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(학습 테스트)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(또 다른 테스트)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(휴식)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(다시하기)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(싸구려 책상, 좋은 의자)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(모의객체)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(셀프션트)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(로그 문자열)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(크래시 테스트 더미)" />
+    <MESSAGE value="TDD 빨간 막대 패턴(깨진 테스트)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TDD 빨간 막대 패턴(깨진 테스트)" />
+  </component>
+</project>
