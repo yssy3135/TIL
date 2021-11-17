@@ -861,3 +861,76 @@ plus()만큼 간단한 것을 구현할 때 그냥 명백한 구현을 입력할
 빨강/초록/리팩토링의 리듬을 유기하길 원한다.
 
 명백한 구현은 두 번째 기어다. 만약 손가락이 머리를 따라오지 못하기 시작하면 저속 기어로 전환할 준비를 하라.
+
+
+##하나에서 여력으로
+객체 컬렉션(collection)을 다루는 연산을 어떻게 구현하나?
+
+일단은 컬렉션 없이 구현하고 그 다음에 컬렉션을 사용하게 한다.
+
+예를들어 숫자 배열의 합을 구하는 함수를 작성한다고 가정.
+
+일단 하나로 시작할 수 있다.
+
+```java
+public void testSum() {
+	assertEquals(5,sum(5));
+}
+
+private int sum(int value){
+	return value;
+}
+```
+
+(sum()을 TestCase 클래스에 구현해서, 단지 한 메서드를 위해 새 클래스를 작성하는 걸 피하고 있다.)
+
+다음에는 sum(new int[] {5,7})을 테스트하고 싶다. 우선은 sum()에 배열을 받아들이는 인자를 하나 추가한다.
+
+```java
+public void testSum() {
+	assertEquals(5, sum(5, new int[] {5}));
+}
+
+private in sum( int value, int[] values) {
+	return value;
+}
+```
+
+이 단계를 변화 격리하기의 예로 볼 수 있다. 테스트 케이스에 인자를 추가하면 테스트 케이스에 영향을 주지 않으면서 자유로이 구현을 변경할 수 있다.
+
+이제 단일값 대신 컬렉션을 사용할 수 있다.
+
+```java
+private int sum(int value, int[] values) {
+	int sum = 0;
+for (int i = 0 ; i < values.length; i++ )
+	sum+=values[i];
+return sum;
+}
+```
+
+다음에는 사용하지 않는 단일 인자를 삭제할 수 있다.
+
+```java
+public void testSum() {
+	assertEquals(5, sum(new int[] {5}));
+}
+
+private int sum(int values[]) {
+	int sum = 0;
+	for(int i = 0 ; i < values.length; i++) {
+		sum += values[i];
+	}
+	return sum;
+}
+```
+
+직전 단계 역시 변환 격리하기의 예로, 코드를 고쳐서 테스트 케이스를 바꿔도 코드에 영향이 없도록 했다.
+
+이제 계획대로 테스트 케이스를 개선할 수 있다.
+
+```java
+public void testSum() {
+	assertEquals(12,sum(new int[] {5,7}));
+}
+```
