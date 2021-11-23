@@ -1146,3 +1146,38 @@ fail()은 테스트가 실패했음을 알려주기 위한 xUnit메서드다.
 원하는 정확한 종류의 예외만을 잡아내야 한다.
 
 그래야 우리가 원하는 예외가 아닌, 다른 예외가 발생한 경우 테스트가 적절히 실패할 것이다.
+
+
+## 전체 테스트
+모든 테스트를 한번에 실행하려면 어떻게 할까?
+
+모든 테스트 슈트에 대한 모음을 작성하면 된다(각각의 패키지에 대해 하나씩, 그리고 전체 에플리케이션의 패리키 테스트를 모아주는 테스트 슈트).
+
+TestCase의 하위 클래스 하나를 패키지에 추가하고 나서 그 클래스에 테스트 메서드를 추가한다고 가정하자.
+
+다음에 테스트를 전부 돌릴 때 그 테스트 메서드도 실행되어야 한다.
+
+대부분의 xUnit구현과 IDE에서 이 기능이 지원되지 않기 때문에,
+
+각각의 패키지는 AllTests라는 이름의 클래스를 가지고 있어야 한다.
+
+통화 예제에 대한 AllTests는 다음과 같다.
+
+```java
+public class AllTests{
+public static void main(String[] args){
+	junit.swingui.TestRunner.run(AllTests.class);
+	}
+
+	public static Test suite(){
+		TestSuite result = new TestSuite("TFD tests");
+		result.addTestSuite(MoneyTest.class);
+		result.addTestSuite(ExchangeTest.class);
+		result.addTestSuite(IdentityRateTest.class);
+		return result;
+	}
+}
+
+```
+
+AllTests에 main()메서드를 구현하여 IDE혹은 명령줄에서 직접 실행되게 할 수도 있다.
