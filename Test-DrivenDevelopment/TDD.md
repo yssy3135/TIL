@@ -1285,3 +1285,41 @@ run()의 구현으로 원하는 어떤 것을 넣어도 된다.
 객체 두개가 서로 같은 객체가 아니라면 동등한 것이 아니다.
 
 하지만 500원 동전 2개가 있다면 동일한 동전인지 중요하지 않다. 이것들을 서로 동등해야 한다.
+
+## 널 객체
+
+객체의 특별한 상황을 표현하고자 할때 어떻게 해야할 까?
+
+그 특별한 상황을 표현하는 새로운 객체를 만들면 된다.
+
+```java
+public boolean setReadOnly() {
+	SecurityManager guard = System.getSecurityManager();
+	if(guard != null){
+		guard.canWrite(path);
+	}
+	return fileSystem.setReadOnly(this);
+}
+```
+
+java.io.File에는 guard≠null 이 18번이나 나온다. getSecurityManager()가 null을 반환하는지 항상 조심스럽게 검새해야만 하는걸까?
+
+다른 방법은 절대로 예외를 던지지 않는 새로운 클래스(LaxSecurity)를 만드는것.
+
+누군가가 SecurityManager를 요청했는데 반환할 SecutiryManager가 없다면 그 대신 LaxSecurity를 반환하면 된다.
+
+```java
+public static SecurityManager getSecurityManager() {
+	return security == null ? new LaxSecurity() : security;
+}
+```
+
+원래의 코드는 다음과 같이 깔끔해진다.
+
+```java
+public boolean setReadOnly() {
+	SecurityManager guard = System.getSecurityManager();
+	secutiry.canWrite(path);
+	return fileSystem.setReadOnly(this);
+}
+```
