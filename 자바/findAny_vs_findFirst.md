@@ -33,3 +33,4 @@ Optional<String> anyElement = elements.stream().parallel()
 
 System.out.println("findAny: " + anyElement.get());
 ```
+
