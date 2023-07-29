@@ -4,7 +4,7 @@
 
 1. Stop The World
     - GC 수행을 위해 JVM이 애플리케이션 실행을 일시 정지하는것.
-    - GC가 수행되면 GC 작업을 맞틍ㄴ 스레드를 제외한 나머지 스레드는 모두 멈추게되고 GC 작업이 종료되면 재개
+    - GC가 수행되면 GC 작업을 마친 스레드를 제외한 나머지 스레드는 모두 멈추게되고 GC 작업이 종료되면 재개
 2. Mark
     - 애플리케이션이 일시 중지되면 GC는 참조되고 있는 객체와 연결된 객체를 타고 이동하며 접근 가능한 객체를 식별하는 과정
 3. Sweep
@@ -35,8 +35,8 @@
 ******************Promotion******************
 
 - MinorGC가 일어나 살아남은 객체의 age가 증가할때 일정 age 이상이되면 Old 영역으로 이동하게됨
-
-![img.png](gc_memory.png)
+- 
+![gc_memory.png](image%2Fgc_memory.png)
 
 **Survivor 영역은 왜 두개일까?**
 
@@ -71,7 +71,7 @@
 
 Runtime Data Area에서 Method Area, Native Stack (JNI), Java Stack 등에서 Heap 메모리의 Object들을 참조하는 데이터 영역
 
-![img.png](run_time_data_area.png)
+![run_time_data_area.png](image%2Frun_time_data_area.png)
 
 **Full GC**
 
