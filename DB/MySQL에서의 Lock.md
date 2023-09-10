@@ -88,3 +88,117 @@ MySQL 서버의 구성은 소스서버와 레플리카 서버로 구성되는다
 
 ![image](https://github.com/yssy3135/TIL/assets/62733005/657c4d05-8370-425b-9884-3907b707aa86)
 
+## 레코드락
+
+- 레코드 자체를 잠그는 것.
+- InnoDB에서는 레코들 자체를 잠그는 것이 아니라 인덱스의 레코드를 잠금
+- 인덱스가 존재하지 않아도 내부적으로 자동 생성된 클러스터 인덱스를 이용해 잠금을 설정
+
+InnoDB에서는 대부분 보조 인덱스를 이용한 변경 작업은 넥스트 키 락(Next Key Lock) 또는 갭락(Gap Lock) 을 사용하지만 **프라이머리 키, 유니크 인덱스에 의한 변경 작업에서는 갭(Gap)에 대해서는 잠그지 않고 레코드 자체에서만 락을 건다.**
+
+## 갭 락
+
+- 레코드 자체가 아니라 레코드와 바로 인접한 레코드 사이의 간격만을 잠그는 것을 의미
+- 레코드와 레코드 사이의 간격에 새로운 레코드가 생성(INSERT)되는 것을 제어
+
+## 넥스트 키 락
+
+- 레코드 락 + 갭락 의 형태를 가짐
+- STATEMENT 포맷 바이너리 로그 사용시 MySQL 서버 REPEATABLE 격리 수준을 사용해야 한다.
+- innodb_locks_unsafe_for_binlog 시스템 변수를 비활성화 하면(0 으로) 변경을 위해 검색하는 레코드에는 넥스트 키 락 방식으로 잠금이 걸림
+
+********목적********
+
+InnoDB의 갭 락이나 넥스트 키 락은 바이너리 로그에 기록되는 쿼리가 레플리카 서버에서 실행될 때 소스 서버에서 만들어 낸 결과와 동일한 결과를 만들어내도록 보장하는 것이 주 목적
+
+넥스트 키 락과 갭 락으로 인해 데드락이 발생하거나 다른 트랜잭션을 기다리게 만드는 일이 자주 발생
+
+→ 바이너리 로그 포맷을 ROW 형태로 바꿔서 넥스트 키 락이나 갭락을 줄이는것이 좋음.
+
+## 자동 증가 락
+
+- 자동 증가하는 숫자 값을 추출 하기 위해  AUTO_INCREMENT 컬럼 속성 제공.
+- 동시에 여러 레코드가 INSERT 되는 경우 중복되지 않아야 함.
+- InnoDB 스토리지 엔진에서 AUTO_INCREMENT 락 이라고하는 테이블 수준의 잠금을 사용
+- INSERT,REPLACE와 같이 새로운 레코드를 저장하는 쿼리에서 필요, UPDATED, DELETE에서는 불필요
+- AUTO_INCREMENT 테이블은 하나만 존재, 동시에 INSERT 쿼리가 들어오면 하나가 먼저 AUTO_INCREMENT_LOCK을 걸게 되고 나머지는 대시해야함,
+- 명시적으로 획득이나 해제는 불가.
+
+**innodb_autoinc_lock_mode를 이용해 자동 증가 락 방식을 변경 가능**
+
+- innodb_autoinc_lock_mode = 0
+    - MySQL5.0과 동일 모든 INSERT 문자에 자동 증가 락 사용
+- innodb_autoinc_lock_mode = 1
+    - 여러건의 INSERT문 중 정확히 예츨이 가능 한 쿼리는 자동 증가 락 사용 X  → 래치(뮤텍스) 사용
+    - 래치(뮤텍스) 는 훨씬 가볍고 빠르다.
+    - 정확히 예측 할 수 없을 경우 ( INSERT … SELECT) 자동 증가 락 사용.
+    - 대략 INSERT 가 수행될 때
+
+      여러개의 자동 증가 값을 할당받아 누락되지 않고 연속되게 한다.
+
+      but 사용되지 못하고 폐기되는 값이 있을수 있어 이후 INSERT 레코드에서는 연속되지 않고 누락된 값이 있을 수 있다. → **최소 하나의 INSERT 문에서 INSERT되는 레코드는 연속되는 자동 증가 값을 가짐**
+
+    - 연속모드 (Consecutive mode) 라고 함.
+- innodb_autoinc_lock_mode = 2
+    - 자동증가 락을 걸지 않음 경량화된 래치(뮤텍스) 사용
+    - 하나의 INSERT문장으로 INSERT 되는 레코드라도 연속되는 자동 증가값을 보장하지 않음.
+    - 인터리빙 모드 (Interleaved mode) 라고도 함.
+    - INSERT … SELECT와 같은 대량 INSERT 문장이 실행되는 도중에서 다른 커텍션에서 INSERT를 수행할 수 있어 동시 처리 성능이 높다.
+    - 자동 증가 기능은 유니크한 값이 생성된다는 것 만 보장.
+    - STAEMENT 포맷의 바이너리 로그를 사용하는 복제에서는 소스 서버와 레플리카 서버의 자동 증가 값이 달라질 수도 있다.
+
+### 자동 증가 값은 한번 증가하면 왜 절대 줄어들지 않을까?
+
+AUTO_INCREMENT 잠금을 최소화 하기 위해서다.
+
+**MySQL 8.0부터는innodb_autoinc_lock_mode의 기본값이 2다.**
+
+바이너리 로그 포맷이 ROW가 기본값이 되었기 때문이다.
+
+STATEMENT 포맷을 사용하고 있다면 innodb_autoinc_lock_mode를 1로 변경해서 사용하는 것을 권장
+
+## 인덱스와 잠금
+
+- InnoDB는 레코드를 잠그는 것이 아니라 인덱스를 잠그는 방식으로 처리된다.
+- 즉, 변경해야 할 레코드를 찾기 위해 검색한 인덱스의 레코드를 모두 락을 걸어야 한다.
+
+```java
+//예제 데이터베이스의 employees 테이블에는 아래와 같이 first name 칼럼만
+//멤버로 담긴 ix_firstname이라는 인덱스가 준비돼 있다.
+//KEY ix_firstname (first_name)
+//employees 테이블에서 first_name='Georgi'인 사원은 전체 253명이 있으며, //first_name='Georgi'이고 last_name='Klassen'인 사원은 딱 1명만 있는 것을 아래 쿼리로
+-// 확인할 수 있다.
+SELECT COUNT (*) FROM employees WHERE first_name='Georgi';
+------
+253
+------
+SELECT COUNT (*) FROM employees WHERE first name='Georgi' AND last name='Klassen';
+------
+1
+------
+// employees 테이블에서 first_name=' Georgi'이고 last_ name=' Klassen' 인 사원의
+// 입사 일자를 오늘로 변경하는 쿼리를 실행해보자.
+UPDATE employees SET hire date=NOW() WHERE first_name='Georgi' AND last_name='Klassen'
+```
+
+아래 UPDATE 문이 실행되면 1건의 레코드가 업데이트 될 것이다.
+
+**1건의 업데이트를 위해 몇개의 레코드에 락을 걸어야 할까?**
+
+- 현재 사용할 수 있는 인덱스는 ix_firstname
+- 인덱스를 이용할 수 있는 조건은 first_name = ‘Georgi’ last_name 컬럼은 인덱스가 없기 때문에 first_name 인 레코드 253 건이 모두 잠기게 된다.
+- UPDATE 문장을 위해 적절히 인덱스가 준비대 있지 않다면 각 클라이언트간의 동시성이 상당히 떨어져 한세션에서 UPDATE작업을 하는 중에 다른 클라이언트는 그 테이블을 업데이트하지 못하고 기다려야 하는 상황이 발생한다.
+
+**************************************************인덱스가 하나도 없다면?**************************************************
+
+- 테이블을 풀 스캔하면서 UPDATE 작업을 진행, 테이블에 있는 모든 레코드를 잠그게 된다.
+- 이것이 MySQL의 방식이며 InnoDB에서 인덱스 설계가 중요한 이유 또한 이것이다.
+
+## 레코드 수준의 잠금 확인 및 해제
+
+- 예전 MySQL 서버에서는 레코드 잠금에 대한 메타정보(딕셔너리 테이블) 을 제공하지 않았다.
+- MySQL 5.1부터 레코드 잠금와 잠금대기에 대한 조회가 가능 잠금과 잠금 대기를 쿼리를 통해 확인 할 수 있다.
+- MySQL 5.1 부터는 information_schema라는 DB에 INNODB_TRX라는 테이블과 INNODB_LOCKS, -INNODB_LOCK_WAITS라는 테이블을 통해 확인이 가능
+- MySQL 8.0부터는 information_schema의 정보들은 조금씩 제거
+
+  그대신 performance_schema의 data_locks와 data_lock_waits 테이블로 대체
