@@ -37,7 +37,7 @@ jpql을 sql로 변환하고 쿼리가 날아간다.
 
 https://docs.jboss.org/hibernate/orm/5.5/userguide/html_single/Hibernate_User_Guide.html#fetching-strategies-dynamic-fetching-entity-graph
 
-![image](https://github.com/yssy3135/TIL/assets/62733005/e21365b3-efd6-4ad7-ba92-227f258d4a48)
+![1.png](img%2FN%2B1%EA%B3%BCMultiBagFetchException%20image%2F1.png)
 
 번역하자면 JPQL 쿼리에서 EAGER 연관관계가 생략된 경우(fetch join 생략)  Hibernate는  각 객체의 EAGER연관관계를 조회하기 위해 또 다른 조회문을 실행하여 N+1문제가 발생한다.
 

@@ -14,11 +14,11 @@ JPQL은 SQL을 추상화해서 특정 DB에 의존하지 않는다.
 
 **findAll 구현을 따라가보면 getQuery 메서드를 사용하고 getQuery메서드는 Criteria를 사용한다.**
 
-![image](https://github.com/yssy3135/TIL/assets/62733005/da88e60f-84c3-4536-bc2d-a1aa35c98a97)
+![1.png](img%2FfindAll%EC%9D%80%20%EC%99%9C%20jpql%EC%9D%BC%EA%B9%8C%3F%20image%2F1.png)
 
-![image](https://github.com/yssy3135/TIL/assets/62733005/29b6b04a-26f7-452c-995e-dcc3b057af32)
+![2.png](img%2FfindAll%EC%9D%80%20%EC%99%9C%20jpql%EC%9D%BC%EA%B9%8C%3F%20image%2F2.png)
 
-![image](https://github.com/yssy3135/TIL/assets/62733005/f739ddba-21db-4d51-b3a8-8458b43095a1)
+![3.png](img%2FfindAll%EC%9D%80%20%EC%99%9C%20jpql%EC%9D%BC%EA%B9%8C%3F%20image%2F3.png)
 
 **Criteria는 JPQL을 생성하는 빌더 클래스이다.**
 

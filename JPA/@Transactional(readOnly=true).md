@@ -51,5 +51,5 @@
     - 쓰기연산은 Master에서 수행
     - 읽기 연산은 Slave에서 수행
         - **readOnly 로 설정된 transaction은 이 SlaveDB에서 처리된다.**
-
-   ![image](https://github.com/yssy3135/TIL/assets/62733005/aa6ba9ea-9d7f-4f0d-b7ff-74453aa7c037)
+      
+![Untitled.png](img%2F%40Transactional%28readOnly%3Dtrue%29%20image%2FUntitled.png)
