@@ -1,10 +1,5 @@
 # Transaction Isolation 에 대하여 그리고 테스트(feat. DATA JPA)
 
-Author: 이윤수
-Main Category: Backend
-Created Time: 2023년 8월 28일 오후 10:44
-Updated Time: 2023년 9월 2일 오후 7:17
-
 # 트랜잭션의 격리 수준(Transaction Isolation Level)
 
 **트랜잭션의 격리수준이란?**

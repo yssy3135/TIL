@@ -86,7 +86,7 @@ MySQL 서버의 구성은 소스서버와 레플리카 서버로 구성되는다
 
 - MySQL 서버에 information_schema 데이터베이스에 존재하는 INNODB_TRX, INNODB_LOCKS, INNODB_LOCK_WAITS라는 테이블을 조인해 LOCK을 조회하고 대기, 어느 트랜잭션이 소유하고 있는지 , 장시간 잠금을 소유하고 있는 클라이언트 등을 확인할 수 있다.
 
-![image](https://github.com/yssy3135/TIL/assets/62733005/657c4d05-8370-425b-9884-3907b707aa86)
+![Untitled.png](image%2FMySQL%EC%97%90%EC%84%9C%EC%9D%98%20Lock%20image%2FUntitled.png)
 
 ## 레코드락
 
