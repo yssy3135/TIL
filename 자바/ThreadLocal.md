@@ -15,7 +15,7 @@ heap 영역에 보관해서 공유하면 thread-safe가 무너지고
 
 이럴때 사용하는 것이 ThreadLocal이다.
 
-![img.png](img.png)
+![img.png](image%2Fimg.png)
 
 ThreadLocal 변수를 선언하면 멀티 스레드 환경에서 각 스레드마다 독립적인 변수를 가지고 get,set 메소드를 통해 값에 접근할 수 있다.
 
