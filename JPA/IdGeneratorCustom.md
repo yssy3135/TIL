@@ -16,7 +16,7 @@ Data Migration을 진행하면서 id도 동일하게 옮겨지고 싶다.
 # 분석
 
 1. repository.save()
-2. 
+
 ![Untitled.png](JPA%20id%20generator%20image%2FUntitled.png)
 
 - save를 하면 isNew 메소드 결과에 따라 persist와 merge로 나눠지게 된다.
