@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] findAll은 dho jpql일까?">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] MySQL MVCC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +170,8 @@
       <workItem from="1693925143330" duration="27000" />
       <workItem from="1694097882152" duration="2245000" />
       <workItem from="1694163825829" duration="599000" />
+      <workItem from="1694343608417" duration="435000" />
+      <workItem from="1694526137815" duration="1504000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -514,7 +516,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,9 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] 09 유연한 설계, 의존성 주입" />
-    <MESSAGE value="[ADD] gc란?" />
-    <MESSAGE value="[ADD] gc란? 이미지 수정" />
     <MESSAGE value="[ADD] DDD start! 1장" />
     <MESSAGE value="[ADD] DirtyChecking과 transaction" />
     <MESSAGE value="[ADD] DIP" />
@@ -557,6 +556,9 @@
     <MESSAGE value="[MOD] N+1 문제 추가" />
     <MESSAGE value="[ADD] readOnly" />
     <MESSAGE value="[ADD] findAll은 dho jpql일까?" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] findAll은 dho jpql일까?" />
+    <MESSAGE value="[ADD] MySQL에서의 LOCK 작성중.." />
+    <MESSAGE value="[ADD] MySQL에서의 LOCK 작성완료" />
+    <MESSAGE value="[ADD] MySQL MVCC" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] MySQL MVCC" />
   </component>
 </project>
