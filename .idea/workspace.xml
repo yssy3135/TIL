@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] MySQL MVCC">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] GC종류와 선택">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/iyunsu/IdeaProjects/TIL/JPA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iyunsu/IdeaProjects/TIL/JPA/img/N+1과MultiBagFetchException image&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -69,15 +69,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JPA/img/N+1과MultiBagFetchException image" />
+      <recent name="$PROJECT_DIR$/DB/image/MySQL에서의 Lock image" />
+      <recent name="$PROJECT_DIR$/DB" />
       <recent name="$PROJECT_DIR$/JPA" />
       <recent name="$PROJECT_DIR$/책" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/자바" />
-      <recent name="$PROJECT_DIR$/자바/image" />
-      <recent name="$PROJECT_DIR$/책/DDD Start!/image" />
-      <recent name="$PROJECT_DIR$/스프링/aop/img" />
-      <recent name="$PROJECT_DIR$/책/image" />
+      <recent name="$PROJECT_DIR$/자바/image/GC종류와 선택 image" />
+      <recent name="$PROJECT_DIR$/JPA/img/findAll은 왜 jpql일까? image" />
+      <recent name="$PROJECT_DIR$/JPA/img/@Transactional(readOnly=true) image" />
+      <recent name="$PROJECT_DIR$/DB/image/MySQL에서의 Lock image" />
+      <recent name="$PROJECT_DIR$/DB/image" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -172,6 +175,10 @@
       <workItem from="1694163825829" duration="599000" />
       <workItem from="1694343608417" duration="435000" />
       <workItem from="1694526137815" duration="1504000" />
+      <workItem from="1694606855924" duration="2870000" />
+      <workItem from="1694680774891" duration="794000" />
+      <workItem from="1694684886299" duration="296000" />
+      <workItem from="1694697343323" duration="1248000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -516,7 +523,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,13 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] DDD start! 1장" />
-    <MESSAGE value="[ADD] DirtyChecking과 transaction" />
-    <MESSAGE value="[ADD] DIP" />
-    <MESSAGE value="[ADD] SimpleDateFormat thread-safe" />
-    <MESSAGE value="[ADD] DDD start! 2장 도메인 영역의 주요 구성 요소" />
-    <MESSAGE value="[ADD] JPA 상속관계 매핑 추가" />
-    <MESSAGE value="[ADD] DDD Start! 3.애그리거트, 애그리거트 루트, 트랜잭션" />
     <MESSAGE value="[ADD] DDD Start! 리포지터리와 애그리거트, 애그리거트간 참조" />
     <MESSAGE value="[ADD] DDD Start! JPA를 이용한 리포지토리 구현 정리중.." />
     <MESSAGE value="[ADD] IDGeneratorCustom 정리" />
@@ -559,6 +559,13 @@
     <MESSAGE value="[ADD] MySQL에서의 LOCK 작성중.." />
     <MESSAGE value="[ADD] MySQL에서의 LOCK 작성완료" />
     <MESSAGE value="[ADD] MySQL MVCC" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] MySQL MVCC" />
+    <MESSAGE value="[ADD] id generator image 업로드" />
+    <MESSAGE value="[ADD] isolationLevel 그리고 테스트(fet. Data JPA)" />
+    <MESSAGE value="[ADD] MySQL에서의 Lock 이미지 수정" />
+    <MESSAGE value="[MOD] 이미지 경로 수정" />
+    <MESSAGE value="[MOD] 오브젝트 이미지 수정" />
+    <MESSAGE value="[MOD] 스레드 로컬 이미지 수" />
+    <MESSAGE value="[ADD] GC종류와 선택" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] GC종류와 선택" />
   </component>
 </project>
