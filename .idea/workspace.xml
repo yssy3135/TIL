@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 읽어야 하는 레코드의 건수">
-      <change afterPath="$PROJECT_DIR$/DB/image/인덱스 알아보기 image/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/인덱스 알아보기.md" beforeDir="false" afterPath="$PROJECT_DIR$/DB/인덱스 알아보기.md" afterDir="false" />
-    </list>
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] B-Tree 인덱스를 통한 데이터 읽기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +178,7 @@
       <workItem from="1694684886299" duration="296000" />
       <workItem from="1694697343323" duration="1248000" />
       <workItem from="1694705275750" duration="764000" />
-      <workItem from="1694874396558" duration="1625000" />
+      <workItem from="1694874396558" duration="2309000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -527,7 +523,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] IDGeneratorCustom 정리" />
     <MESSAGE value="[MOD] ThreadLocal 폴더 변경" />
     <MESSAGE value="[ADD] propagation" />
     <MESSAGE value="[MOD] 환경수정" />
@@ -570,6 +565,7 @@
     <MESSAGE value="[ADD] GC종류와 선택" />
     <MESSAGE value="[ADD] 인덱스 정리중.." />
     <MESSAGE value="[ADD] 읽어야 하는 레코드의 건수" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 읽어야 하는 레코드의 건수" />
+    <MESSAGE value="[ADD] B-Tree 인덱스를 통한 데이터 읽기" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] B-Tree 인덱스를 통한 데이터 읽기" />
   </component>
 </project>
