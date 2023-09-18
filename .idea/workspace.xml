@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 인덱스 스킵 스캔">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] B-Tree 인덱스의 가용성과 효율성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +180,7 @@
       <workItem from="1694684886299" duration="296000" />
       <workItem from="1694697343323" duration="1248000" />
       <workItem from="1694705275750" duration="764000" />
-      <workItem from="1694874396558" duration="3032000" />
+      <workItem from="1694874396558" duration="3842000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -525,7 +525,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,9 +543,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] 4장 빼먹은 부분 추가" />
-    <MESSAGE value="[ADD] 4장 정리 끝!" />
-    <MESSAGE value="[ADD] .." />
     <MESSAGE value="[ADD] 5장 시작 JPA 이용 조회," />
     <MESSAGE value="[ADD] 5장 정렬 및 페이징 처리" />
     <MESSAGE value="[ADD] N+1 과 MultiBagFetchException&#10;TODO. 예제 추가할 것." />
@@ -568,6 +565,9 @@
     <MESSAGE value="[ADD] 인덱스 풀 스캔" />
     <MESSAGE value="[ADD] 루스 인덱스 스캔" />
     <MESSAGE value="[ADD] 인덱스 스킵 스캔" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 인덱스 스킵 스캔" />
+    <MESSAGE value="[ADD] 다중 컬럼 인덱스" />
+    <MESSAGE value="[ADD] B-Tree 인덱스의 정렬 및 스캔 방향" />
+    <MESSAGE value="[ADD] B-Tree 인덱스의 가용성과 효율성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] B-Tree 인덱스의 가용성과 효율성" />
   </component>
 </project>
