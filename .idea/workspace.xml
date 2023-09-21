@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 멀티 밸류 인덱스" />
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 외래키" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +181,7 @@
       <workItem from="1694874396558" duration="3842000" />
       <workItem from="1695047472388" duration="1306000" />
       <workItem from="1695135147437" duration="94000" />
+      <workItem from="1695221151874" duration="1323000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -525,7 +526,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,8 +544,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] readOnly" />
-    <MESSAGE value="[ADD] findAll은 dho jpql일까?" />
     <MESSAGE value="[ADD] MySQL에서의 LOCK 작성중.." />
     <MESSAGE value="[ADD] MySQL에서의 LOCK 작성완료" />
     <MESSAGE value="[ADD] MySQL MVCC" />
@@ -568,6 +567,8 @@
     <MESSAGE value="[ADD] 전문 검색 인덱스" />
     <MESSAGE value="[ADD] 함수 기반 인덱스" />
     <MESSAGE value="[ADD] 멀티 밸류 인덱스" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 멀티 밸류 인덱스" />
+    <MESSAGE value="[ADD] 클러스터링 인덱스" />
+    <MESSAGE value="[ADD] 외래키" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 외래키" />
   </component>
 </project>
