@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 외래키" />
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 쿼리실행 절차와 옵티마이저의 종류" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,27 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/iyunsu/IdeaProjects/TIL/DB/image&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/iyunsu/IdeaProjects/TIL/DB",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DB" />
       <recent name="$PROJECT_DIR$/DB/image" />
       <recent name="$PROJECT_DIR$/JPA/img/N+1과MultiBagFetchException image" />
       <recent name="$PROJECT_DIR$/DB/image/MySQL에서의 Lock image" />
-      <recent name="$PROJECT_DIR$/DB" />
       <recent name="$PROJECT_DIR$/JPA" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -182,6 +182,7 @@
       <workItem from="1695047472388" duration="1306000" />
       <workItem from="1695135147437" duration="94000" />
       <workItem from="1695221151874" duration="1323000" />
+      <workItem from="1695307324324" duration="2080000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -526,7 +527,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] MySQL에서의 LOCK 작성중.." />
     <MESSAGE value="[ADD] MySQL에서의 LOCK 작성완료" />
     <MESSAGE value="[ADD] MySQL MVCC" />
     <MESSAGE value="[ADD] id generator image 업로드" />
@@ -569,6 +569,7 @@
     <MESSAGE value="[ADD] 멀티 밸류 인덱스" />
     <MESSAGE value="[ADD] 클러스터링 인덱스" />
     <MESSAGE value="[ADD] 외래키" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 외래키" />
+    <MESSAGE value="[ADD] 쿼리실행 절차와 옵티마이저의 종류" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 쿼리실행 절차와 옵티마이저의 종류" />
   </component>
 </project>
