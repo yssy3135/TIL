@@ -27,7 +27,7 @@ mysql> EXPLAIN
 		GROUP BY emp_no;
 ```
 
-![Pasted image 20230927151702.png](image%2FPasted%20image%2020230927151702.png)
+![Pasted image 20230927151702.png](image%2Fgroup%20by%20image%2FPasted%20image%2020230927151702.png)
 
 - (emp_no, from_date)로 인덱스가 생성되어 있음.
 - 위 쿼리의 where 조건은 인덱스 레이지 스캔 방식으로 접근할 수 없는 쿼리.
@@ -64,7 +64,7 @@ mysql> EXPLAIN
 		GROUP BY e.last_name;
 ```
 
-![Pasted image 20230927160217.png](image%2FPasted%20image%2020230927160217.png)![[Pasted image 20230927160217.png]]
+![Pasted image 20230927160217.png](image%2Fgroup%20by%20image%2FPasted%20image%2020230927160217.png)
 
 **"Using temporary" 만표기되고 "Using filesort" 는 표시되지 않았다 왜?**
 - MySQL 8.0 이전에는 Order By를 명시적으로 사용하지 않아도 그루핑되는 컬럼을 기준으로 묵시적인 정렬까지 함께 수행됨.
