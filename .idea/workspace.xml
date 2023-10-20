@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] SUBQUERY, DEPENDENT, SUBQUERY, DERIVED, DEPENDENT DERIVED, UNCACHEABLE SUBQUERY, UNCACHEABLE UNION, MATERIALIZED select_type 추가" />
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] type 컬럼 추가(작성중..)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,6 +193,7 @@
       <workItem from="1697467000580" duration="3415000" />
       <workItem from="1697533953868" duration="185000" />
       <workItem from="1697554302554" duration="4752000" />
+      <workItem from="1697724770480" duration="1359000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -537,7 +538,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,8 +556,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] 루스 인덱스 스캔" />
-    <MESSAGE value="[ADD] 인덱스 스킵 스캔" />
     <MESSAGE value="[ADD] 다중 컬럼 인덱스" />
     <MESSAGE value="[ADD] B-Tree 인덱스의 정렬 및 스캔 방향" />
     <MESSAGE value="[ADD] B-Tree 인덱스의 가용성과 효율성" />
@@ -580,6 +579,8 @@
     <MESSAGE value="[ADD] 실행계획 작성중.." />
     <MESSAGE value="[ADD] 실행계획 UNION" />
     <MESSAGE value="[ADD] SUBQUERY, DEPENDENT, SUBQUERY, DERIVED, DEPENDENT DERIVED, UNCACHEABLE SUBQUERY, UNCACHEABLE UNION, MATERIALIZED select_type 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] SUBQUERY, DEPENDENT, SUBQUERY, DERIVED, DEPENDENT DERIVED, UNCACHEABLE SUBQUERY, UNCACHEABLE UNION, MATERIALIZED select_type 추가" />
+    <MESSAGE value="[ADD] table 컬럼 추가" />
+    <MESSAGE value="[ADD] type 컬럼 추가(작성중..)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] type 컬럼 추가(작성중..)" />
   </component>
 </project>
