@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] type 컬럼 추가(ref, fulltext, ref_or_null, unique_subquery, index_subquery)" />
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] type 컬럼 추가(range, index_merge, index, ALL), posiible_key컬럼 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +196,7 @@
       <workItem from="1697533953868" duration="185000" />
       <workItem from="1697554302554" duration="4752000" />
       <workItem from="1697724770480" duration="1359000" />
-      <workItem from="1697815054771" duration="660000" />
+      <workItem from="1697815054771" duration="2535000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -539,7 +541,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] B-Tree 인덱스의 정렬 및 스캔 방향" />
     <MESSAGE value="[ADD] B-Tree 인덱스의 가용성과 효율성" />
     <MESSAGE value="[ADD] R-Tree 인덱스" />
     <MESSAGE value="[ADD] 전문 검색 인덱스" />
@@ -582,6 +583,7 @@
     <MESSAGE value="[ADD] table 컬럼 추가" />
     <MESSAGE value="[ADD] type 컬럼 추가(작성중..)" />
     <MESSAGE value="[ADD] type 컬럼 추가(ref, fulltext, ref_or_null, unique_subquery, index_subquery)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] type 컬럼 추가(ref, fulltext, ref_or_null, unique_subquery, index_subquery)" />
+    <MESSAGE value="[ADD] type 컬럼 추가(range, index_merge, index, ALL), posiible_key컬럼 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] type 컬럼 추가(range, index_merge, index, ALL), posiible_key컬럼 추가" />
   </component>
 </project>
