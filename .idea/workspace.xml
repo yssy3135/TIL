@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 실무 주의사항.md" />
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] Long의 비교연산">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/자바/Long의 비교연산.md" beforeDir="false" afterPath="$PROJECT_DIR$/자바/Long의 비교연산.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,6 +204,9 @@
       <workItem from="1698936379011" duration="1009000" />
       <workItem from="1698987531380" duration="107000" />
       <workItem from="1699322387412" duration="3960000" />
+      <workItem from="1699540455981" duration="2402000" />
+      <workItem from="1699600655492" duration="598000" />
+      <workItem from="1699601290862" duration="610000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -545,7 +551,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] 병렬처리" />
     <MESSAGE value="[ADD] OrderBy (정렬 처리 방법 진행중..)" />
     <MESSAGE value="[ADD] OrderBy 정렬 처리 방법" />
     <MESSAGE value="[ADD] 정렬 관련 상태 변수" />
@@ -588,6 +593,7 @@
     <MESSAGE value="[ADD] Aspect AOP" />
     <MESSAGE value="[ADD] 상속보다 컴포지션" />
     <MESSAGE value="[ADD] 실무 주의사항.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 실무 주의사항.md" />
+    <MESSAGE value="[ADD] Long의 비교연산" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Long의 비교연산" />
   </component>
 </project>
