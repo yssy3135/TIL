@@ -22,7 +22,7 @@ Data Migration을 진행하면서 id도 동일하게 옮겨지고 싶다.
 - save를 하면 isNew 메소드 결과에 따라 persist와 merge로 나눠지게 된다.
     - isNew 로직은 새로운 Entity를 판단하기 위해 아래 전략을 사용
     - id가 null이 아닌경우에 new 라고 판한
-- 
+  
 ![Untitled 1.png](JPA%20id%20generator%20image%2FUntitled%201.png)
 - 
 - MergeEventListener 에게 fireMerge event를 날림.
@@ -61,7 +61,7 @@ Data Migration을 진행하면서 id도 동일하게 옮겨지고 싶다.
 
 # 문제해결 과정
 
-- 시도 1
+### 시도 1
 
 IdentifierGenerator가 인터페이스로 존재하니 구현해서 넣어버리자.
 
