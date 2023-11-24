@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] JWT" />
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[MOD] IdGeneratorCustom 오타수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,6 +208,8 @@
       <workItem from="1699601290862" duration="610000" />
       <workItem from="1700140632851" duration="414000" />
       <workItem from="1700231442006" duration="898000" />
+      <workItem from="1700491124320" duration="1289000" />
+      <workItem from="1700815625573" duration="384000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -550,7 +554,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,8 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] 정렬 관련 상태 변수" />
-    <MESSAGE value="[ADD] GROUPBY" />
     <MESSAGE value="[ADD] DISTINCT" />
     <MESSAGE value="[MOD] GROUPBY 폴더 수정" />
     <MESSAGE value="[MOD] 임시테이블 작성중..." />
@@ -593,6 +595,8 @@
     <MESSAGE value="[ADD] Long의 비교연산" />
     <MESSAGE value="[ADD] Querydsl 기본" />
     <MESSAGE value="[ADD] JWT" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] JWT" />
+    <MESSAGE value="[ADD] missing signature key 에러" />
+    <MESSAGE value="[MOD] IdGeneratorCustom 오타수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[MOD] IdGeneratorCustom 오타수정" />
   </component>
 </project>
