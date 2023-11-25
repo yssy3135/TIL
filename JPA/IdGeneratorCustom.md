@@ -35,27 +35,27 @@ Data Migration을 진행하면서 id도 동일하게 옮겨지고 싶다.
 
 ![Untitled 3.png](JPA%20id%20generator%20image%2FUntitled%203.png)
 
-1. entityIsDetached 로직 안에서  requestedId를 조회해서 검증
+2entityIsDetached 로직 안에서  id를 조회해서 유효한 Entity인지 검증
 
 ![Untitled 4.png](JPA%20id%20generator%20image%2FUntitled%204.png)
 
 ![Untitled 5.png](JPA%20id%20generator%20image%2FUntitled%205.png)
 
-**********************************id를 넣어주지 않을 경우**********************************
+### **********************************id를 넣어주지 않을 경우**********************************
 
 1. isNew를 타게 되며 위에서 id 를 넣어줬던 getIdentifier에서는 id를 넣어주지 않았기 때문에 null을 반환한다.
 
 ![Untitled 6.png](JPA%20id%20generator%20image%2FUntitled%206.png)
 
-1. entityState에 따라 로직을 동일하게 타게 되는데 이때  id가 존재하는 Entity들은 Detached를 탔지만
+2. entityState에 따라 로직을 동일하게 타게 되는데 이때  id가 존재하는 Entity들은 Detached를 탔지만
 
-   id가 null인 경우는 TRANSIENT(비영속) 상태를 만들어버린다.
+   id가 null인 경우는 TRANSIENT(비영속) 상태를 만듬.
 
 ![Untitled 7.png](JPA%20id%20generator%20image%2FUntitled%207.png)
 
 ![Untitled 8.png](JPA%20id%20generator%20image%2FUntitled%208.png)
 
-2. 따라서 TRANSIENT 분기를 타게 되고 아래 saveWithGeneratedId를 통해 id를 넣어주게 된다.
+3. 따라서 TRANSIENT 분기를 타게 되고 아래 saveWithGeneratedId를 통해 id를 넣어주게 된다.
 
 ![Untitled 9.png](JPA%20id%20generator%20image%2FUntitled%209.png)
 
@@ -93,7 +93,7 @@ IdentifierGenerator가 인터페이스로 존재하니 구현해서 넣어버리
 
   @GeneratedValue(strategy = GenerationType.IDENTITY) 처럼
 
-  strategy에 따라 Generator를 Entity에 init 하고 있었던것.
+  strategy에 따라 Generator를 Entity에 init 하는 과정있 존재했던것.
 
   
 ![Untitled 16.png](JPA%20id%20generator%20image%2FUntitled%2016.png)
