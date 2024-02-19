@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[MOD] 정리">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] MSA로의 전환">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/iyunsu/IdeaProjects/TIL/DB/image/실행 계획 확인 image&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iyunsu/IdeaProjects/TIL/JPA&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -69,18 +69,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JPA" />
+      <recent name="$PROJECT_DIR$/DB/image/클러스터링 인덱스 image" />
       <recent name="$PROJECT_DIR$/DB/image/실행 계획 확인 image" />
       <recent name="$PROJECT_DIR$/DB" />
       <recent name="$PROJECT_DIR$/DB/GroupBy/image" />
-      <recent name="$PROJECT_DIR$/DB/image/OrderBy Image" />
-      <recent name="$PROJECT_DIR$/DB/image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JPA" />
+      <recent name="$PROJECT_DIR$/스프링/image" />
       <recent name="$PROJECT_DIR$/DB/image" />
       <recent name="$PROJECT_DIR$/책" />
       <recent name="$PROJECT_DIR$/DB" />
-      <recent name="$PROJECT_DIR$/개발지식/image" />
-      <recent name="$PROJECT_DIR$/자바/image/GC종류와 선택 image" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -209,7 +209,24 @@
       <workItem from="1700140632851" duration="414000" />
       <workItem from="1700231442006" duration="898000" />
       <workItem from="1700491124320" duration="1289000" />
-      <workItem from="1700815625573" duration="2270000" />
+      <workItem from="1700815625573" duration="6819000" />
+      <workItem from="1702997100509" duration="123000" />
+      <workItem from="1703044546740" duration="606000" />
+      <workItem from="1703255833790" duration="1691000" />
+      <workItem from="1703515906226" duration="318000" />
+      <workItem from="1704206328871" duration="67000" />
+      <workItem from="1704291952985" duration="1951000" />
+      <workItem from="1704463540092" duration="345000" />
+      <workItem from="1704897702673" duration="8000" />
+      <workItem from="1705328824280" duration="54000" />
+      <workItem from="1706885673402" duration="217000" />
+      <workItem from="1706942674999" duration="361000" />
+      <workItem from="1706951158892" duration="663000" />
+      <workItem from="1707749612730" duration="2275000" />
+      <workItem from="1707888117608" duration="1220000" />
+      <workItem from="1707922195683" duration="116000" />
+      <workItem from="1708007441048" duration="763000" />
+      <workItem from="1708094416274" duration="2164000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -554,7 +571,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,31 +589,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[MOD] GROUPBY 폴더 수정" />
-    <MESSAGE value="[MOD] 임시테이블 작성중..." />
-    <MESSAGE value="[ADD] 임시테이블 작성완료" />
-    <MESSAGE value="[ADD] 실행계획 작성중.." />
-    <MESSAGE value="[ADD] 실행계획 UNION" />
-    <MESSAGE value="[ADD] SUBQUERY, DEPENDENT, SUBQUERY, DERIVED, DEPENDENT DERIVED, UNCACHEABLE SUBQUERY, UNCACHEABLE UNION, MATERIALIZED select_type 추가" />
-    <MESSAGE value="[ADD] table 컬럼 추가" />
-    <MESSAGE value="[ADD] type 컬럼 추가(작성중..)" />
-    <MESSAGE value="[ADD] type 컬럼 추가(ref, fulltext, ref_or_null, unique_subquery, index_subquery)" />
-    <MESSAGE value="[ADD] type 컬럼 추가(range, index_merge, index, ALL), posiible_key컬럼 추가" />
-    <MESSAGE value="[ADD] 스프링의 동시성 문제" />
-    <MESSAGE value="[ADD] 템플릿 메서드 패턴과 콜백 패턴" />
-    <MESSAGE value="[ADD] 동적 프록시 기술" />
-    <MESSAGE value="[ADD] 스프링이 지원하는 프록시" />
-    <MESSAGE value="[ADD] 빈 후처리기" />
-    <MESSAGE value="[ADD] 불변객체" />
-    <MESSAGE value="[ADD] Aspect AOP" />
-    <MESSAGE value="[ADD] 상속보다 컴포지션" />
-    <MESSAGE value="[ADD] 실무 주의사항.md" />
-    <MESSAGE value="[ADD] Long의 비교연산" />
-    <MESSAGE value="[ADD] Querydsl 기본" />
     <MESSAGE value="[ADD] JWT" />
     <MESSAGE value="[ADD] missing signature key 에러" />
     <MESSAGE value="[MOD] IdGeneratorCustom 오타수정" />
     <MESSAGE value="[MOD] 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[MOD] 정리" />
+    <MESSAGE value="[MOD] IdGenerator 수정" />
+    <MESSAGE value="[ADD] README 링크 추가" />
+    <MESSAGE value="[ADD] 스프링 링크 추가" />
+    <MESSAGE value="[ADD] ManyToOne에는 왜 mappedBy가 없을까?" />
+    <MESSAGE value="[ADD] DB Index Data Structure" />
+    <MESSAGE value="[ADD] 인증,인가 세션과 JWT" />
+    <MESSAGE value="[ADD] Redis개념과특징" />
+    <MESSAGE value="[ADD] Redis key 명령어" />
+    <MESSAGE value="[ADD] Redis Data Type" />
+    <MESSAGE value="[ADD] 자바에 적용된 해시테이블 분석.md" />
+    <MESSAGE value="[ADD] fetch join이 on절을 지원하지 않는 이유" />
+    <MESSAGE value="[ADD] 클러스터링 인덱스" />
+    <MESSAGE value="[ADD] DB를 사용하는 Test 작성시 유의사항.md" />
+    <MESSAGE value="[ADD] fetchJoin where절을 사용할때 주의.md" />
+    <MESSAGE value="[ADD] 모놀리스 아키텍처" />
+    <MESSAGE value="[ADD] 모놀리스와 SOA" />
+    <MESSAGE value="[ADD] MSA의 핵심원칙" />
+    <MESSAGE value="[ADD] 왜 MSA가" />
+    <MESSAGE value="[ADD] 왜 MSA가 대두되었을까?" />
+    <MESSAGE value="[ADD] MSA의 단점" />
+    <MESSAGE value="[ADD] MSA로의 전환" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] MSA로의 전환" />
   </component>
 </project>
