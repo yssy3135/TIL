@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] MSA로의 전환">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] MSA에서의 분해">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +226,13 @@
       <workItem from="1707888117608" duration="1220000" />
       <workItem from="1707922195683" duration="116000" />
       <workItem from="1708007441048" duration="763000" />
-      <workItem from="1708094416274" duration="2164000" />
+      <workItem from="1708094416274" duration="2758000" />
+      <workItem from="1708786400561" duration="171000" />
+      <workItem from="1708871670749" duration="3973000" />
+      <workItem from="1709043813301" duration="254000" />
+      <workItem from="1709044078653" duration="599000" />
+      <workItem from="1709046202304" duration="3005000" />
+      <workItem from="1709367377846" duration="1796000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -571,7 +577,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,10 +595,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] JWT" />
-    <MESSAGE value="[ADD] missing signature key 에러" />
-    <MESSAGE value="[MOD] IdGeneratorCustom 오타수정" />
-    <MESSAGE value="[MOD] 정리" />
     <MESSAGE value="[MOD] IdGenerator 수정" />
     <MESSAGE value="[ADD] README 링크 추가" />
     <MESSAGE value="[ADD] 스프링 링크 추가" />
@@ -614,6 +616,10 @@
     <MESSAGE value="[ADD] 왜 MSA가 대두되었을까?" />
     <MESSAGE value="[ADD] MSA의 단점" />
     <MESSAGE value="[ADD] MSA로의 전환" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] MSA로의 전환" />
+    <MESSAGE value="[ADD] 웹플럭스" />
+    <MESSAGE value="[ADD] MSA 에서의 아키텍처" />
+    <MESSAGE value="[ADD] MSA전환의 장애물" />
+    <MESSAGE value="[ADD] MSA에서의 분해" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] MSA에서의 분해" />
   </component>
 </project>
