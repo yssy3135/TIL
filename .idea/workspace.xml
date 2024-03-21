@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] MSA에서의 분해">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="[ADD] 분해로 인한 문제 IPC">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,6 +234,10 @@
       <workItem from="1709044078653" duration="599000" />
       <workItem from="1709046202304" duration="3005000" />
       <workItem from="1709367377846" duration="1796000" />
+      <workItem from="1709558691146" duration="1331000" />
+      <workItem from="1709736379229" duration="241000" />
+      <workItem from="1710255298964" duration="598000" />
+      <workItem from="1710340828724" duration="598000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -577,7 +582,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <option name="localTasksCounter" value="204" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,8 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[MOD] IdGenerator 수정" />
-    <MESSAGE value="[ADD] README 링크 추가" />
     <MESSAGE value="[ADD] 스프링 링크 추가" />
     <MESSAGE value="[ADD] ManyToOne에는 왜 mappedBy가 없을까?" />
     <MESSAGE value="[ADD] DB Index Data Structure" />
@@ -620,6 +623,8 @@
     <MESSAGE value="[ADD] MSA 에서의 아키텍처" />
     <MESSAGE value="[ADD] MSA전환의 장애물" />
     <MESSAGE value="[ADD] MSA에서의 분해" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] MSA에서의 분해" />
+    <MESSAGE value="[ADD] 분해 관점에서의 장애물" />
+    <MESSAGE value="[ADD] 분해로 인한 문제 IPC" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 분해로 인한 문제 IPC" />
   </component>
 </project>
