@@ -1,17 +1,24 @@
-# 왜??
 
-Data Migration을 진행하면서 id도 동일하게 옮겨지고 싶다.
+JPA Identity전략을 사용하면서 Id값을 비워놓으면 DB에게 위임한다.
+
+이때 id값을 미리 세팅해주면 어떻게될까?
+
+id값이 존재하면 merge 되며 없을경우 DB에게 위임하여 id 값이 설정된다.
+
+**이때 id 값이 없을때 DB에게 위임하지 않고 미리 세팅한 id값으로 저장되게 할 수는 없을까?**
+
+
 
 **요구사항**
 
 - Entity를 저장할때 id 값이 넣어져있으면 해당 값을 그대로 사용
-- 입력이 되어 있지 않으면 (null) 이면 DB의 Sequence값을 조회 해 와서 사용
+- 입력이 되어 있지 않으면 (null) 이면 DB에게 위임한다.
 
 # 문제
 
 - @GeneratedValue(strategy = GenerationType.IDENTITY) 그대로 사용할 경우
   id 값을 넣어줘도 Sequence값을 조회해서 넣어줌.
-- 원하는 id 값으로 저장이 가능하도록 해야함
+- 원하는 id 값으로 저장이 가능하도록 해야한다.
 
 # 분석
 
@@ -86,6 +93,8 @@ IdentifierGenerator가 인터페이스로 존재하니 구현해서 넣어버리
 
 - 하지만  id를 넣어줬을경우는 잘 동작했지만 id 를 넣어주지 않고 저장 하는 경우 IdentifierGeneratorHelper.POST_INSERT_INDICATOR 로직을 타는 시점에서 오류가 발생했다.
 - insert를 하는 시점에 identityDelegate란 놈이 insert를 하고 식별자를 검색하는데 **identityDelegate 자체가 null 이었다!**
+
+**identityDelegate 이름을 보자하니 id값을 세팅한 전략에 따라 위임해서 수행하게 하는 역할일 것으로 추측된다 그렇다면 언제 어디서 세팅해줄까?**
 
 ![Untitled 15.png](JPA%20id%20generator%20image%2FUntitled%2015.png)
 
