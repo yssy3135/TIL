@@ -18,7 +18,7 @@ Today I Learned
 
 ### JPA
 - [@Transactional(readOnly=true)](https://github.com/yssy3135/TIL/blob/master/JPA/%40Transactional(readOnly%3Dtrue).md)
-- [IdGeneratorCustom](https://github.com/yssy3135/TIL/blob/master/JPA/IdGeneratorCustom.md)
+- [Id가 존재하면 Merge 없으면 지정한 값으로 id를 할수 있을까](https://github.com/yssy3135/TIL/blob/master/JPA/IdGeneratorCustom.md)
 - [JPA DirtyCheking과 Transaction](https://github.com/yssy3135/TIL/blob/master/JPA/JPA%20DirtyCheking%EA%B3%BC%20Transaction.md)
 - [JPA기초와매핑](https://github.com/yssy3135/TIL/blob/master/JPA/JPA%EA%B8%B0%EC%B4%88%EC%99%80%EB%A7%A4%ED%95%91.md)
 - [JPA소개](https://github.com/yssy3135/TIL/blob/master/JPA/JPA%EC%86%8C%EA%B0%9C.md)
