@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="docs: 분산트랜잭션">
+    <list default="true" id="c8834069-a3c0-416d-990e-034edd0ffd79" name="Changes" comment="docs: 이벤트 소싱과EDA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/아키텍처/MSA/분해 관점에서의 장애물.md" beforeDir="false" afterPath="$PROJECT_DIR$/아키텍처/MSA/분해 관점에서의 장애물.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/iyunsu/IdeaProjects/TIL/JPA&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/iyunsu/IdeaProjects/TIL/JPA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/JPA" />
@@ -82,6 +84,14 @@
       <recent name="$PROJECT_DIR$/책" />
       <recent name="$PROJECT_DIR$/DB" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SwiftWorkspaceSettings">
@@ -238,7 +248,10 @@
       <workItem from="1710255298964" duration="598000" />
       <workItem from="1710340828724" duration="598000" />
       <workItem from="1711376639047" duration="2904000" />
-      <workItem from="1712239933328" duration="1200000" />
+      <workItem from="1712239933328" duration="1864000" />
+      <workItem from="1712494167898" duration="3285000" />
+      <workItem from="1713448569704" duration="64000" />
+      <workItem from="1713448699926" duration="961000" />
     </task>
     <task id="LOCAL-00049" summary="데이터 중심 시스템 문제점 예제">
       <created>1681138361020</created>
@@ -583,7 +596,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692096166990</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,8 +614,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[ADD] ManyToOne에는 왜 mappedBy가 없을까?" />
-    <MESSAGE value="[ADD] DB Index Data Structure" />
     <MESSAGE value="[ADD] 인증,인가 세션과 JWT" />
     <MESSAGE value="[ADD] Redis개념과특징" />
     <MESSAGE value="[ADD] Redis key 명령어" />
@@ -626,6 +637,8 @@
     <MESSAGE value="[ADD] 분해 관점에서의 장애물" />
     <MESSAGE value="[ADD] 분해로 인한 문제 IPC" />
     <MESSAGE value="docs: 분산트랜잭션" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: 분산트랜잭션" />
+    <MESSAGE value="docs: Saga 패턴" />
+    <MESSAGE value="docs: 이벤트 소싱과EDA" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: 이벤트 소싱과EDA" />
   </component>
 </project>
