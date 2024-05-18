@@ -17,7 +17,7 @@ id값이 존재하면 merge 되며 없을경우 DB에게 위임하여 id 값이 
 # 문제
 
 - @GeneratedValue(strategy = GenerationType.IDENTITY) 그대로 사용할 경우
-  id 값을 넣어줘도 Sequence값을 조회해서 넣어줌.
+  id 값을 넣어줘도 auto_increment값을 조회해서 넣어줌.
 - 원하는 id 값으로 저장이 가능하도록 해야한다.
 
 # 분석
@@ -77,7 +77,7 @@ IdentifierGenerator가 인터페이스로 존재하니 구현해서 넣어버리
 
 - generate 할 때 @GeneratedValue(strategy = GenerationType.IDENTITY)로 지정했을 경우
   IdentifierGeneratorHelper.POST_INSERT_INDICATOR 로직을 타면서
-  DB sequence를 가져와서 넣어주기 때문에 null이면 IdentifierGeneratorHelper.POST_INSERT_INDICATOR 를 반환하도록 구현했다.
+  DB auto_increment 값을를 가져와서 넣어주기 때문에 null이면 IdentifierGeneratorHelper.POST_INSERT_INDICATOR 를 반환하도록 구현했다.
 
 ![Untitled 11.png](JPA%20id%20generator%20image%2FUntitled%2011.png)
 
